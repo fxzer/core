@@ -639,7 +639,7 @@ function genNodeList(
       } else {
         comma && push(', ')
       }
-      }
+    }
   }
 }
 
