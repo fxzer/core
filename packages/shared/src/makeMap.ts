@@ -7,6 +7,7 @@
  */
 
 /*! #__NO_SIDE_EFFECTS__ */
+/* 传入字符串集合，返回一个判断参数是否在合集中的函数: isHTMLTag */
 export function makeMap(
   str: string,
   expectsLowerCase?: boolean,

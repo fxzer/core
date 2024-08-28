@@ -125,6 +125,7 @@ export const isKnownSvgAttr: (key: string) => boolean = /*#__PURE__*/ makeMap(
 
 /**
  * Shared between server-renderer and runtime-core hydration logic
+ * 判断是否是能够渲染的属性
  */
 export function isRenderableAttrValue(value: unknown): boolean {
   if (value == null) {

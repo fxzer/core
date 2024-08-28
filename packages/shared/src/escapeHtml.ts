@@ -1,5 +1,5 @@
 const escapeRE = /["'&<>]/
-
+/* escapeHtml 函数用于转义 HTML 中的特殊字符（", ', &, <, >），以防止 XSS（跨站脚本攻击）或其他安全问题。 */
 export function escapeHtml(string: unknown): string {
   const str = '' + string
   const match = escapeRE.exec(str)

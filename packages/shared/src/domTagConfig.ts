@@ -38,6 +38,7 @@ const MATH_TAGS =
 const VOID_TAGS =
   'area,base,br,col,embed,hr,img,input,link,meta,param,source,track,wbr'
 
+/* 导出一些由 makeMap 于对应集合产生的判断函数 */
 /**
  * Compiler only.
  * Do NOT use in runtime code paths unless behind `__DEV__` flag.

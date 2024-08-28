@@ -1,5 +1,11 @@
 const range: number = 2
-
+/* 生成一段代码的上下文框架，并在特定范围内标记出感兴趣的代码片段。这在错误提示、调试信息或代码高亮中非常有用，可以让用户直观地看到代码中的问题所在 
+2  |  function add(a, b) {
+3  |    return a + b;
+   |           ^^^^^^^^
+4  |  }
+5  |  
+*/
 export function generateCodeFrame(
   source: string,
   start = 0,

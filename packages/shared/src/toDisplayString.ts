@@ -19,6 +19,7 @@ const isRef = (val: any): val is { value: unknown } => {
 
 /**
  * For converting {{ interpolation }} values to displayed strings.
+ * 将插值值转换为显示字符串。
  * @private
  */
 export const toDisplayString = (val: unknown): string => {
@@ -61,6 +62,7 @@ const replacer = (_key: string, val: unknown): any => {
   return val
 }
 
+/** 将 Symbol 转字符串 */
 const stringifySymbol = (v: unknown, i: number | string = ''): any =>
   // Symbol.description in es2019+ so we need to cast here to pass
   // the lib: es2016 check
